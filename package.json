@@ -1,0 +1,9 @@
+{
+  "name": "com.raxy.sm",
+  "version": "1.0.0",
+  "displayName": "RAXY State Machine",
+  "author": {
+    "name": "RobyRAX",
+    "url": "https://github.com/RobyRAX"
+  }
+}
