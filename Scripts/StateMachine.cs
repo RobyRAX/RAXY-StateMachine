@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using Sirenix.OdinInspector;
-using System.Threading.Tasks;
+using Cysharp.Threading.Tasks;
+
 
 #if UNITY_EDITOR
 using Sirenix.Utilities.Editor;
@@ -78,9 +79,9 @@ namespace RAXY.StateMachine
             _ = DelayInitAsync();
         }
 
-        async Task DelayInitAsync()
+        async UniTask DelayInitAsync()
         {
-            await Task.Delay(500);
+            await UniTask.WaitForSeconds(0.5f);
             RefreshFromTarget();
         }
 
